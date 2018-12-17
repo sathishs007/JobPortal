@@ -1,0 +1,27 @@
+<html>
+<head>
+<body>
+ <div style="margin: 10px 100px; border: 15px solid #2a3f54;">
+  <div style="text-align: center; padding: 10px 50px">
+   <img src="${web}/resources/theme/images/myjobkart.png" width="100" height="100"></img>
+   <hr style="border-color: #0083d5; margin-top: 10px;">
+   <h4 style="font-size:20px; color:#2a3f54;">Dear Member,</h4>
+
+   <p style="font-size:15px; color:#2a3f54;">You have created a Job Alert "${alertName}" with the following criteria:	
+ </p>
+   <p style="color:#2a3f54;font-size:12px;" ></p>
+<p>
+<label style="font-weight: bold;">Key Skills : </label><span>${keySkills}</span><br />
+<label style="font-weight: bold;">Location: </label><span>${preferredLocation}</span><br />
+<label style="font-weight: bold;">JobType: </label><span>${jobType}</span><br />
+<label style="font-weight: bold;">Role: </label><span>${role}</span><br />
+<label style="font-weight: bold;">Experience: </label><span>${experienceInYear}</span><br />
+</p>
+   <hr style="border-color: #0083d5; margin-top: 10px;">
+   <h4 style="color:#2a3f54;font-size:15px;">Regards</h4>
+   <p style="color:#2a3f54;font-size:15px; ">Customer Support,</p>
+   <p style="color:#2a3f54;font-size:15px;">www.myjobkart.com</p>
+  </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TestingReport" pageWidth="700" pageHeight="500" columnWidth="660" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" isIgnorePagination="true" uuid="2994960e-dbec-48c1-ae48-dcf5a29b5c94">
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="ireport.background.image" value="C:\Users\User\Desktop\MyjobkartLogo.PNG"/>
+	<property name="ireport.background.image.properties" value="false,true,0.25,0,0,0,0,0,0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["E:\\Report\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="experienceSubReport" class="net.sf.jasperreports.engine.JasperReport" isForPrompting="false"/>
+	<parameter name="experienceDataSouces" class="net.sf.jasperreports.engine.JRDataSource" isForPrompting="false"/>
+	<parameter name="keySkills" class="java.lang.String" isForPrompting="false"/>
+	<parameter name="profileImage" class="java.io.InputStream" isForPrompting="false"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="percentage" class="java.lang.String"/>
+	<field name="phone" class="java.lang.Long"/>
+	<field name="emailId" class="java.lang.String"/>
+	<field name="college" class="java.lang.String"/>
+	<field name="degree" class="java.lang.String"/>
+	<field name="department" class="java.lang.String"/>
+	<field name="yearOfPassing" class="java.lang.String"/>
+	<field name="profileImage" class="java.awt.Image"/>
+	<field name="location" class="java.lang.String"/>
+	<field name="companyName" class="java.lang.String"/>
+	<field name="companyType" class="java.lang.String"/>
+	<field name="designation" class="java.lang.String"/>
+	<field name="experienceInMonth" class="java.lang.String"/>
+	<field name="startDate" class="java.lang.String"/>
+	<field name="endDate" class="java.lang.String"/>
+	<field name="lastSalary" class="java.lang.String"/>
+	<field name="keySkills" class="java.lang.String"/>
+	<field name="grade" class="java.lang.String"/>
+	<background>
+		<band height="460" splitType="Prevent">
+			<staticText>
+				<reportElement x="0" y="0" width="37" height="38" forecolor="#CCCCCC" uuid="7957c5e0-e314-4281-b738-653f5a5d99ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="80"/>
+				</textElement>
+				<text><![CDATA[Myjobkart]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="660" height="460" uuid="e2a1614d-40a3-4e49-a6d1-d6270f93bacb"/>
+				<imageExpression><![CDATA["D:\\reports\\blank-5.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="29" splitType="Stretch">
+			<image>
+				<reportElement x="270" y="0" width="133" height="29" uuid="1b358069-4d2a-473b-bfa1-7d581b67c000"/>
+				<imageExpression><![CDATA["D:\\reports\\myjobkartcomlogo.PNG"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="120">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="105" y="57" width="250" height="15" uuid="eafb2fa6-2218-42be-8987-e91689ce57ef"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{location}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="105" y="0" width="171" height="26" uuid="fe29b753-1124-4769-97f2-1af9b1e3c1a4"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{firstName}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="2" width="105" height="69" uuid="99627c10-d0f6-44a0-a1f8-db6136ea5646"/>
+				<imageExpression><![CDATA[$P{profileImage}]]></imageExpression>
+			</image>
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="85" width="160" height="25" backcolor="#2B3E54" uuid="34308f9d-a9ca-4cd0-a93c-3a206a0bbc61"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="85" width="160" height="25" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="220868ca-274e-4ad2-8e37-afc53504f2ab"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Educations :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="105" y="26" width="250" height="15" uuid="86326e5f-1fb5-4002-8015-d59603f1db96"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{emailId}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="105" y="42" width="250" height="15" uuid="3aed41a4-70bc-4e4c-af4b-6afad0471a01"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{phone}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20">
+			<rectangle>
+				<reportElement x="0" y="0" width="660" height="20" backcolor="#2B3E54" uuid="de990a78-189d-4918-b12e-aca14e279fc1"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="80" height="20" forecolor="#FFFFFF" uuid="dde4e345-b126-4ba2-a7d9-5ad2067b5112"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Degree]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="80" y="0" width="160" height="20" forecolor="#FFFFFF" uuid="e7b98807-d97b-4b4a-ac4b-dd450a30ca3a"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Department]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="0" width="180" height="20" forecolor="#FFFFFF" uuid="659b7589-f838-4ed9-8e77-659564cddbea"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[College]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" x="420" y="0" width="105" height="20" isPrintWhenDetailOverflows="true" forecolor="#FFFFFF" uuid="0b761376-200d-4ac1-ad6f-5321b8c2582e"/>
+				<box leftPadding="3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Year Of Passing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="525" y="0" width="65" height="20" forecolor="#FFFFFF" uuid="bc114fa4-9cb6-466b-8667-528df706f449"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Grade]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="590" y="0" width="70" height="20" forecolor="#FFFFFF" uuid="39d2a78f-ac22-4aa6-9a1d-ca816f3aa50b"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Percentage]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="80" y="0" width="160" height="25" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="fc6f92cf-d0b5-467f-bc66-30ccbedc5301"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="80" height="25" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="79d35bfa-f25d-4acd-b159-f68df0e9b8c5"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{degree}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="240" y="0" width="180" height="25" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="f3bdcadb-b3dc-4d34-afee-2aef89384aa1"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5" rightPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{college}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="420" y="0" width="105" height="25" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="dc4be168-bd2c-43a0-84bf-2df7f7fc2f6d"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{yearOfPassing}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="525" y="0" width="65" height="25" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="13076624-bc00-4400-bc79-1fe1d83c27d5"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grade}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="590" y="0" width="70" height="25" isRemoveLineWhenBlank="true" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="ca191d80-787d-4e52-9eaf-1aadc79d6466"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{percentage}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="73">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="10" width="180" height="25" backcolor="#2B3E54" uuid="84cc1a48-a602-4150-9195-6cb2f022249e"/>
+			</rectangle>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="0" y="48" width="180" height="25" isRemoveLineWhenBlank="true" uuid="c5a9c5ff-0983-4740-b128-c47da4cd70e1"/>
+				<box leftPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Skills :"+$P{keySkills}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="10" width="180" height="25" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="dede936b-f5c7-48f2-b776-2e9d847b7da8"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[ Additional Information :]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<summary>
+		<band height="50" splitType="Immediate">
+			<subreport>
+				<reportElement x="0" y="0" width="660" height="50" uuid="dabf8ba0-932a-4927-b07d-bdc647573159"/>
+				<parametersMapExpression><![CDATA[]]></parametersMapExpression>
+				<subreportParameter name="SUBREPORT_DIR">
+					<subreportParameterExpression><![CDATA[$P{SUBREPORT_DIR}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="experienceSubReport">
+					<subreportParameterExpression><![CDATA[$P{experienceSubReport}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="experienceDataSouces">
+					<subreportParameterExpression><![CDATA[$P{experienceDataSouces}]]></subreportParameterExpression>
+				</subreportParameter>
+				<dataSourceExpression><![CDATA[$P{experienceDataSouces}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{experienceSubReport}]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>

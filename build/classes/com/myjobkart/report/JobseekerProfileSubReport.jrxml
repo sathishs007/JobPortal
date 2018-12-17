@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TestingReport_subreport1" pageWidth="660" pageHeight="802" whenNoDataType="NoDataSection" columnWidth="660" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7e85b8bc-557f-4861-a690-4a943edf62b4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="companyName" class="java.lang.String"/>
+	<field name="companyType" class="java.lang.String"/>
+	<field name="designation" class="java.lang.String"/>
+	<field name="lastSalary" class="java.lang.String"/>
+	<field name="startDate" class="java.lang.String"/>
+	<field name="endDate" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="45" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="10" width="160" height="25" backcolor="#2B3E54" uuid="784a4d9a-002b-48a1-b73e-f01992364388"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="10" width="160" height="25" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="5f61d92c-98a3-47bd-a4e2-7d7eddcb228f"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Working Experinces :]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="0" width="660" height="20" backcolor="#2B3E54" uuid="98a19284-976e-49c3-90f3-f0d29141f169"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="0" width="160" height="20" forecolor="#FFFFFF" uuid="3e781649-7881-4c4c-ab64-53999e3921e1"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Company]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="160" y="0" width="105" height="20" forecolor="#FFFFFF" uuid="28e4d9c2-7dd2-4297-9074-2e10a8270e10"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Company Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="265" y="0" width="170" height="20" forecolor="#FFFFFF" uuid="17dab85f-43ab-4c49-b149-abc0ccda9e9a"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Designations]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="435" y="0" width="80" height="20" forecolor="#FFFFFF" uuid="a8d89903-558f-4fa1-9c4e-a60259a8f97e"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="515" y="0" width="80" height="20" forecolor="#FFFFFF" uuid="e5c5c805-851f-454b-84c2-3598c0ff586a"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Start  Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="595" y="0" width="65" height="20" forecolor="#FFFFFF" uuid="85fbfd42-51bd-4531-b728-151215e0d1b6"/>
+				<box leftPadding="5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[End Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="160" y="0" width="105" height="25" isRemoveLineWhenBlank="true" uuid="63fb3406-df7b-49ef-9774-1b789696a9ad"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{companyType}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="160" height="25" isRemoveLineWhenBlank="true" uuid="35e6393b-e192-4500-a210-ef5e99985590"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{companyName}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="265" y="0" width="170" height="25" isRemoveLineWhenBlank="true" uuid="94ed9b21-d88d-4236-a03f-eb36eb562e03"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{designation}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="435" y="0" width="80" height="25" isRemoveLineWhenBlank="true" uuid="be8438f5-bc2c-43ec-83a7-17f4701f7735"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{lastSalary}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="515" y="0" width="80" height="25" isRemoveLineWhenBlank="true" uuid="10d96908-d67e-4ff7-b226-8df5d417311c"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{startDate}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToBandHeight" x="595" y="0" width="65" height="25" isRemoveLineWhenBlank="true" uuid="02bd276c-5544-4040-a0c3-61899357eb17"/>
+				<box topPadding="5" leftPadding="5" bottomPadding="5">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{endDate}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<noData>
+		<band height="86">
+			<staticText>
+				<reportElement x="0" y="40" width="220" height="46" uuid="da077fac-2b16-401b-b799-7f9340911480"/>
+				<box leftPadding="10">
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Info! May be the FRESHER candidate! ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement mode="Opaque" x="0" y="10" width="160" height="25" backcolor="#2B3E54" uuid="a416e12f-2502-4765-8ed6-a957de26e6de"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="10" width="160" height="25" forecolor="#FFFFFF" backcolor="#FFFFFF" uuid="90755e9c-e98f-48c5-a636-ad4ba5d9e4b8"/>
+				<box leftPadding="5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Working Experinces :]]></text>
+			</staticText>
+		</band>
+	</noData>
+</jasperReport>

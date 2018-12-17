@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+
+	<mvc:annotation-driven />
+	<context:annotation-config />
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+	<context:component-scan base-package="com.myjobkart" />
+
+	<context:property-placeholder location="classpath:myjobkart.properties" />
+
+	<bean id="jacksonMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"></bean>
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="jacksonMessageConverter" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="50000000" />
+	</bean>
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
+		<property name="viewClass">
+			<value>
+				org.springframework.web.servlet.view.tiles3.TilesView
+			</value>
+		</property>
+	</bean>
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/config/tiles.xml</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="velocityEngine"
+		class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+		<property name="velocityProperties">
+			<props>
+				<prop key="resource.loader">class</prop>
+				<prop key="class.resource.loader.class">
+					org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+				</prop>
+			</props>
+		</property>
+	</bean>
+	<context:component-scan base-package="com.myjobkart" />
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com" />
+		<property name="port" value="25" />
+		<property name="username" value="myjobkart.it@gmail.com" />
+		<property name="password" value="myjobkart@123" />
+		<property name="defaultEncoding" value="UTF-8" />
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.debug">true</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>myjobkarturl</value>
+				<value>messages</value>
+				<value>Dropdown</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="${jdbc.driverClassName}" />
+		<property name="url" value="${jdbc.url}" />
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="removeAbandonedOnMaintenance" value="${remove.abandoned}" />
+		<property name="initialSize" value="${initial.size}" />
+		<property name="maxTotal" value="${max.total}" />
+		<property name="maxIdle" value="${max.idle}" />
+		<property name="minIdle" value="${min.idle}" />
+	</bean>
+
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>com.myjobkart.vo.JobseekerProfileVO</value>
+				<value>com.myjobkart.vo.AdminLoginVO</value>
+				<value>com.myjobkart.vo.EmployerLoginVO</value>
+				<value>com.myjobkart.vo.EmployerVO</value>
+				<value>com.myjobkart.vo.JobseekerVO</value>
+				<value>com.myjobkart.vo.JobseekerLoginVO</value>
+				<value>com.myjobkart.vo.EmployerProfileVO</value>
+				<value>com.myjobkart.vo.JobPostVO</value>
+				<value>com.myjobkart.vo.AppliedJobVO</value>
+				<value>com.myjobkart.vo.SaveJobVO</value>
+				<value>com.myjobkart.vo.ShortListVO</value>
+				<value>com.myjobkart.vo.SaveCandidateVO</value>
+				<value>com.myjobkart.vo.EmployerProductServiceVO</value>
+				<value>com.myjobkart.vo.JobseekerProductServiceVO</value>
+				<value>com.myjobkart.vo.ViewJobSeekerVO</value>
+				<value>com.myjobkart.vo.EntrolledSeviceVO</value>
+				<value>com.myjobkart.vo.BannerPostVO</value>
+				<value>com.myjobkart.vo.ProductVO</value>
+				<value>com.myjobkart.vo.ContactVO</value>
+				<value>com.myjobkart.vo.FeedbackVO</value>
+				<value>com.myjobkart.vo.JobseekerEducationVO</value>
+				<value>com.myjobkart.vo.JobseekerProfessionalVO</value>
+				<value>com.myjobkart.vo.NewsLetterVO</value>
+				<value>com.myjobkart.vo.JobAlertVO</value>
+				<value>com.myjobkart.vo.CompanyVO</value>
+				<value>com.myjobkart.vo.IndustryVO</value>
+				<value>com.myjobkart.vo.EmployerActivityVO</value>
+				<value>com.myjobkart.vo.JobseekerActivityVO</value>
+				<value>com.myjobkart.vo.EmployerSubuserVO</value>
+				<value>com.myjobkart.vo.BookingVO</value>
+				<value>com.myjobkart.vo.EmployerAlertVO</value>
+				<value>com.myjobkart.vo.WalkinVO</value>
+				
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<!-- <prop key="hibernate.search.default.directory_provider">${hibernate.search.default.directory_provider}</prop>
+				<prop key="hibernate.search.default.indexBase">${hibernate.search.default.indexBase}</prop> -->
+				<!-- <prop key="hibernate.hbm2ddl.auto">update</prop>  -->
+			</props>
+		</property>
+	</bean>
+
+	<tx:annotation-driven />
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="viewResolvers"
+		class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/templates/</value>
+		</property>
+		<property name="suffix">
+			<value>.vm</value>
+		</property>
+		<property name="exposeSpringMacroHelpers">
+			<value>true</value>
+		</property>
+	</bean>
+
+</beans>
