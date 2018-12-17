@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/main_template.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/header.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/footer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="admin_home" extends="admin.definition">
+		<put-attribute name="title" value="Home"></put-attribute>
+		<put-attribute name="body" value="/admin_home.jsp"></put-attribute>
+	</definition>
+	<definition name="admin_home" extends="admin.definition">
+		<put-attribute name="title" value="Home"></put-attribute>
+		<put-attribute name="body" value="/admin_home.jsp"></put-attribute>
+	</definition>
+
+
+
+
+	<!-- patient Pages End -->
+
+	<!-- Admin Function Start -->
+	<definition name="admin.definition" template="/admin_template.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/header.jsp"></put-attribute>
+		<put-attribute name="menu" value="/admin_home_menu.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/footer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="admin_sign_in" extends="admin.definition">
+		<put-attribute name="title" value="Admin sign in"></put-attribute>
+		<put-attribute name="menu" value=""></put-attribute>
+		<put-attribute name="body" value="/admin_sign_in.jsp"></put-attribute>
+	</definition>
+
+	<definition name="admin_forgot_password" extends="base.definition">
+		<put-attribute name="title" value="Admin Forgot Password"></put-attribute>
+		<put-attribute name="body" value="/admin_forgot_password.jsp"></put-attribute>
+	</definition>
+
+	<definition name="admin_change_password" extends="base.definition">
+		<put-attribute name="title" value="Admin Change Password"></put-attribute>
+		<put-attribute name="body" value="/admin_change_password.jsp"></put-attribute>
+	</definition>
+
+	<definition name="admin_change_password_after_login"
+		extends="admin.definition">
+		<put-attribute name="title" value="Admin Change Password"></put-attribute>
+		<put-attribute name="body"
+			value="/admin_change_password_after_login.jsp"></put-attribute>
+	</definition>
+
+
+
+
+	<definition name="create_customer" extends="admin.definition">
+		<put-attribute name="title" value="Admin Forgot Password"></put-attribute>
+		<put-attribute name="body" value="/create_customer.jsp"></put-attribute>
+	</definition>
+	<definition name="create_customer_invoice" extends="admin.definition">
+		<put-attribute name="title" value="Admin Forgot Password"></put-attribute>
+		<put-attribute name="body" value="/create_customer_invoice.jsp"></put-attribute>
+	</definition>
+	<definition name="view_customer_invoice" extends="admin.definition">
+		<put-attribute name="title" value="Admin Forgot Password"></put-attribute>
+		<put-attribute name="body" value="/view_customer_invoice.jsp"></put-attribute>
+	</definition>
+
+	<definition name="create_supplier" extends="admin.definition">
+		<put-attribute name="title" value="Create Supplier"></put-attribute>
+		<put-attribute name="body" value="/create_supplier.jsp"></put-attribute>
+	</definition>
+
+	<definition name="view_supplier" extends="admin.definition">
+		<put-attribute name="title" value="View Supplier"></put-attribute>
+		<put-attribute name="body" value="/view_supplier.jsp"></put-attribute>
+	</definition>
+
+	<definition name="edit_supplier" extends="admin.definition">
+		<put-attribute name="title" value="Edit Supplier"></put-attribute>
+		<put-attribute name="body" value="/edit_supplier.jsp"></put-attribute>
+	</definition>
+
+	<definition name="create_customer" extends="admin.definition">
+		<put-attribute name="title" value="Create Customer"></put-attribute>
+		<put-attribute name="body" value="/create_customer.jsp"></put-attribute>
+	</definition>
+	<definition name="view_customer" extends="admin.definition">
+		<put-attribute name="title" value="View Customer"></put-attribute>
+		<put-attribute name="body" value="/view_customer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="edit_customer" extends="admin.definition">
+		<put-attribute name="title" value="Edit Customer"></put-attribute>
+		<put-attribute name="body" value="/edit_customer.jsp"></put-attribute>
+	</definition>
+
+	<definition name="create_supplier_invoice" extends="admin.definition">
+		<put-attribute name="title" value="Create Supplier Invoice"></put-attribute>
+		<put-attribute name="body" value="/create_supplier_invoice.jsp"></put-attribute>
+	</definition>
+
+	<definition name="edit_supplier_invoice_items" extends="admin.definition">
+		<put-attribute name="title" value="Edit Supplier Invoice Items"></put-attribute>
+		<put-attribute name="body" value="/edit_supplier_invoice_items.jsp"></put-attribute>
+	</definition>
+
+	<definition name="view_supplier_invoice" extends="admin.definition">
+		<put-attribute name="title" value="View Supplier Invoice"></put-attribute>
+		<put-attribute name="body" value="/view_supplier_invoice.jsp"></put-attribute>
+	</definition>
+
+
+	<definition name="edit_supplier_invoice" extends="admin.definition">
+		<put-attribute name="title" value="Edit Supplier Invoice"></put-attribute>
+		<put-attribute name="body" value="/edit_supplier_invoice.jsp"></put-attribute>
+	</definition>
+
+
+
+</tiles-definitions>

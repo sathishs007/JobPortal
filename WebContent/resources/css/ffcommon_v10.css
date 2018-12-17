@@ -1,0 +1,2023 @@
+.ltCont,.ltLayer {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.loginLay .selLogin,.ltBx .row,.ltBx.wrappendInputs .multiToggle,.ltBx.wrappendInputs .toggle,.wrap
+	{
+	*zoom: 1
+}
+
+.loginLay .selLogin:after,.loginLay .selLogin:before,.ltBx .row:after,.ltBx .row:before,.ltBx.wrappendInputs .multiToggle:after,.ltBx.wrappendInputs .multiToggle:before,.ltBx.wrappendInputs .toggle:after,.ltBx.wrappendInputs .toggle:before,.wrap:after,.wrap:before
+	{
+	display: table;
+	content: "";
+	line-height: 0
+}
+
+.loginLay .selLogin:after,.ltBx .row:after,.ltBx.wrappendInputs .multiToggle:after,.ltBx.wrappendInputs .toggle:after,.wrap:after
+	{
+	clear: both
+}
+
+.ltBx.wrappendInputs label,.smArw {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+
+.nCarousel {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.ltBx .ltGlobalHd .ltGlobalCls {
+	background: url(../../101/i/comIconSprite.png) no-repeat
+}
+
+.headGNB .topIcon,.nCarousel .arrow,.newStatus,.smArw {
+	background: url(../../101/i/comSprite.png) no-repeat
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Roboto, sans-serif
+}
+
+body {
+	color: #444
+}
+
+.fixedForm .row .leadFormTxtArea textarea,body,dd,div,dl,dt,input,li,p,pre,select,td,textarea
+	{
+	font-size: 12px;
+	
+}
+
+a {
+	color: #1380be;
+	text-decoration: none
+}
+
+ul {
+	list-style: none
+}
+
+textarea {
+	resize: vertical
+}
+
+.fixedForm .row .leadFormTxtArea textarea[type=button],.fixedForm .row .leadFormTxtArea textarea[type=submit],button,fieldset,img,input[type=button],input[type=submit]
+	{
+	border: 0
+}
+
+button {
+	background: 0 0;
+	overflow: visible
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+	margin: 0
+}
+
+@media print {
+	.noprint {
+		display: none !important
+	}
+	.noP .f14 {
+		font-size: 14pt
+	}
+	.noP .f13 {
+		font-size: 13pt
+	}
+	.noP .f11 {
+		font-size: 11pt
+	}
+}
+
+.branchIc,.callIc,.chatIc,.closeForm em,.contactUsSuces em,.ffGnb>li a em,.formArr,.goTop em,.gryArwIc,.noJScript div em,.row.err em,.row.ok em,.testmnl .nCarousel .arrow,.thankMsg em,.tollIc,.widgtAr,footer .footrTwitr em
+	{
+	background: url(../i/ffcommonIcons_v1.png) no-repeat;
+	display: inline-block;
+	
+}
+
+.accessIc,.blueArr,.chatPopIc,.errIc,.fixedForm .row.err em,.fixedForm .row.ok em,.glfPhnIc,.highLtIc,.locIc,.mailIc,.pEmailIc,.pNameIc,.pPhnIc,.rArrw,.rWArrw,.rankIc,.smsIc,.sucesIc,.tlkIc,.visStep2,.visStep3,.white_btn em
+	{
+	background: url(../i/homePage.png) no-repeat;
+	display: inline-block
+}
+
+.closeLbx,.cvStep1,.cvStep2,.cvStep3,.orWrap,.thumbDwn,.thumbUp,.txtStep1,.txtStep2,.txtStep3,.txtStep4
+	{
+	background: url(../i/ffrevampSprite2.png) no-repeat;
+	display: inline-block
+}
+
+.blkArwLst li em,.browse>a em,.hexBluBig,.iCrcl,.viewList em,.whiteArwLst li em
+	{
+	background: url(../i/ecourseSprite_v1.png) no-repeat;
+	display: inline-block
+}
+
+.detailCol div .zoomIc,.rjArrow {
+	background: url(../i/rjSteps.png) no-repeat;
+	display: inline-block
+}
+
+.calndrIc,.docIc,.dwnWhiteArr,.dwnldIc,.eduIc,.empIc,.grnExclmIc,.grnZoomIc,.pdfIc,.pointrIc,.printIc,.smlPhnIc
+	{
+	background: url(../i/ffrevampSprite3_v1.png) no-repeat;
+	display: inline-block
+}
+
+.mobSmsIc,.selAplcntIc,.tick3Ic {
+	background: url(../i/prioritySprite.png) no-repeat;
+	display: inline-block
+}
+
+.rupee13,.rupee17,.rupee17b,.rupee17r,.rupee28,.rupee31b {
+	background: url(../i/rupeeIc.png) no-repeat;
+	display: inline-block;
+	*vertical-align: middle
+}
+
+.banr {
+	background: url(../i/banner.jpg) top center no-repeat
+}
+
+.headGNB .mActive .jobs,.headGNB .menu li:hover .jobs {
+	background-position: 0 -174px
+}
+
+.headGNB .mActive .Recr,.headGNB .menu li:hover .Recr {
+	background-position: 0 -69px
+}
+
+.headGNB .mActive .Comp,.headGNB .menu li:hover .Comp {
+	background-position: 0 -132px
+}
+
+.headGNB .mActive .Serv,.headGNB .menu li:hover .Serv {
+	background-position: 0 -254px
+}
+
+.headGNB .mActive .More,.headGNB .menu li:hover .More {
+	background-position: 0 -216px
+}
+
+.headGNB .mActive .Login,.headGNB .menu li:hover .Login {
+	background-position: 2px -27px
+}
+
+.headGNB .mActive .notify,.headGNB .menu li:hover .notify {
+	background-position: 4px -349px
+}
+
+.wrap {
+	width: 990px;
+	margin: 0 auto
+}
+
+.headGNBWrap {
+	background-color: #fff;
+	min-height: 89px
+}
+
+.headGNB .nLogo {
+	width: 233px;
+	height: 28px;
+	margin: 34px 0 0 4px;
+	background: url(../../100/i/nLogo.png) 0 -56px no-repeat
+}
+
+.naukriInternationlPage .headGNB .nLogo {
+	background-position: 0 0
+}
+
+.premiumPage .headGNB .nLogo {
+	background-position: 0 -28px
+}
+
+.headGNB .lastSib {
+	margin-bottom: 10px
+}
+
+.headGNB .menu a {
+	display: block;
+	text-align: center;
+	padding: 26px 0 19px;
+	color: #666
+}
+
+.headGNB .menu.midSec>li:first-child {
+	margin-left: 20px
+}
+
+.headGNB .menu .mActive,.headGNB .menu li:hover {
+	background-color: #f5f5f5
+}
+
+.headGNB .menu .mActive div,.headGNB .menu li:hover div {
+	color: #1380be;
+	font-weight: 400
+}
+
+.headGNB .menu li:hover a:hover {
+	color: #09c
+}
+
+.headGNB .menu li:hover .subMenu {
+	opacity: 1;
+	-ms-filter: "alpha(Opacity=100)";
+	filter: alpha(opacity = 100);
+	height: auto;
+	line-height: 1;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	overflow: visible;
+	z-index: 9999;
+	padding: 18px 0 10px
+}
+
+.headGNB li {
+	width: 85px;
+	float: left
+}
+
+.headGNB .midSec {
+	float: left;
+	position: relative;
+	position: relative;
+	z-index: 50;
+	width: 550px
+}
+
+.headGNB .subMenu {
+	position: absolute;
+	background-color: #f5f5f5;
+	overflow: hidden;
+	box-shadow: 1px 2px 2px #C7C7C7;
+	opacity: 0;
+	-ms-filter: "alpha(Opacity=0)";
+	filter: alpha(opacity = 0);
+	height: 0;
+	line-height: 0;
+	-moz-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	width: 145px
+}
+
+.headGNB .subMenu ul {
+	border-right: 1px solid #eee;
+	float: left
+}
+
+.headGNB .subMenu li {
+	float: none;
+	width: 144px;
+	text-align: left
+}
+
+.headGNB .subMenu a {
+	text-align: left;
+	padding: 10px 5px 15px 15px;
+	color: #666
+}
+
+.headGNB .subMenu .header1 a:hover {
+	color: #666;
+	cursor: default
+}
+
+.headGNB .subMenu ul.group li.header1 a {
+	font-weight: 700;
+	padding: 9px 5px 9px 20px
+}
+
+.headGNB .subMenu.c2 {
+	width: 290px
+}
+
+.headGNB .subMenu.c3 {
+	width: 435px
+}
+
+.headGNB .subMenu.c4 {
+	width: 600px
+}
+
+.headGNB .subMenu .group a {
+	padding: 5px 5px 5px 20px
+}
+
+.headGNB .subMenu.fixedRight {
+	right: 0;
+	position: fixed
+}
+
+.headGNB .mTxt {
+	line-height: 24px;
+	color: #666
+}
+
+.headGNB .topIcon {
+	width: 20px;
+	height: 20px;
+	display: inline-block
+}
+
+.headGNB .jobs {
+	background-position: 0 -153px
+}
+
+.headGNB .Recr {
+	background-position: 0 -90px
+}
+
+.headGNB .Comp {
+	background-position: 0 -111px
+}
+
+.headGNB .Serv {
+	background-position: 0 -236px
+}
+
+.headGNB .More {
+	background-position: 0 -195px
+}
+
+.headGNB .Login {
+	background-position: 2px -48px
+}
+
+.headGNB .setting {
+	background-position: 0 -275px
+}
+
+.headGNB .notify {
+	background-position: 4px -326px
+}
+
+.headGNB .setting {
+	margin: 3px 0 2px
+}
+
+.headGNB .rghtSec {
+	text-align: right;
+	padding: 16px 0 0
+}
+
+.headGNB .rghtSec .immediate {
+	text-align: right;
+	padding: 6px 0 14px;
+	*width: 88px
+}
+
+.headGNB .rghtSec .immediate .smArw {
+	*vertical-align: top
+}
+
+.headGNB .rghtSec.nonLogged a {
+	text-align: right;
+	margin-right: 6px
+}
+
+.headGNB .rghtSec.nonLogged li {
+	float: none;
+	width: auto
+}
+
+.headGNB .rghtSec .subMenu {
+	right: 0;
+	padding: 0
+}
+
+.headGNB .rghtSec ul {
+	float: none
+}
+
+.headGNB .rghtSec li.first-child {
+	background-color: #fff
+}
+
+.headGNB .rghtSec li.last-child {
+	position: relative;
+	*height: 100%;
+	*margin-top: 0
+}
+
+.headGNB .rghtSec li.last-child .immediate {
+	padding-bottom: 15px
+}
+
+.headGNB .rghtSec.logged {
+	padding-top: 0
+}
+
+.headGNB .rghtSec.logged li {
+	position: relative
+}
+
+.headGNB .rghtSec.logged a {
+	padding-bottom: 15px
+}
+
+.headGNB .rghtSec.logged .subMenu {
+	width: auto
+}
+
+.headGNB .rghtSec.logged .subMenu.recommendTT {
+	padding: 0;
+	background-color: #fff;
+	box-shadow: -2px 1px 3px #e0dfdf
+}
+
+.headGNB .rghtSec.logged .subMenu.recommendTT li:hover {
+	background-color: #fff
+}
+
+.headGNB .rghtSec.logged .notify,.headGNB .rghtSec.logged .notify span,.headGNB .rghtSec.logged .user,.headGNB .rghtSec.logged .user span
+	{
+	width: 24px;
+	height: 24px;
+	display: inline-block
+}
+
+.headGNB .rghtSec .tip {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 10px;
+	position: absolute;
+	bottom: 36px;
+	right: 20%;
+	border-color: transparent transparent #fff
+}
+
+.headGNB .septr {
+	float: right;
+	height: 45px;
+	margin: 25px 30px 0 0;
+	border-left: 1px solid #E7E7E7
+}
+
+.newStatus {
+	background-position: -15px -17px;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	margin: 3px -10px
+}
+
+.smArw {
+	background-position: -1px -17px;
+	width: 7px;
+	height: 7px;
+	margin: 4px 0 0 4px
+}
+
+.rJobCntr {
+	border-radius: 25px;
+	background-color: red;
+	width: 20px;
+	line-height: 21px;
+	height: 20px;
+	position: absolute;
+	display: none;
+	color: #fff;
+	-webkit-animation: vibrate 2000ms;
+	-moz-animation: vibrate 2000ms;
+	animation: vibrate 2000ms;
+	right: 21px;
+	top: 17px
+}
+
+.nCarousel {
+	position: relative;
+	padding: 0 10px
+}
+
+.nCarousel ul.list {
+	position: relative;
+	list-style: none
+}
+
+.nCarousel li.item {
+	position: absolute
+}
+
+.nCarousel .windows {
+	position: relative;
+	overflow: hidden
+}
+
+.nCarousel .arrowCont {
+	cursor: pointer;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	*top: 50%;
+	*margin-top: -6px;
+	width: 11px;
+	height: 12px
+}
+
+.nCarousel .prev {
+	left: -10px
+}
+
+.nCarousel .prev .arrow {
+	background-position: -7px 53px;
+	left: 0
+}
+
+.nCarousel .next {
+	right: -10px
+}
+
+.nCarousel .next .arrow {
+	background-position: 1px 53px;
+	right: 0
+}
+
+.nCarousel .arrow {
+	width: 11px;
+	display: block;
+	height: 12px
+}
+
+.footer {
+	background: #e2e2e2
+}
+
+.footer.disclaimer .wrap {
+	background: #e2e2e2;
+	padding: 10px 0
+}
+
+.footer.carousel,.footer.carousel .wrap {
+	background: #FFF
+}
+
+.footer.carousel .label {
+	display: inline-block;
+	margin-left: -140px;
+	padding-right: 40px;
+	line-height: 85px;
+	vertical-align: top
+}
+
+.footer.carousel .nCarousel .item {
+	width: 160px;
+	height: 88px;
+	text-align: center
+}
+
+.footer.carousel .nCarousel .item a {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+
+.footer .nCarousel .item a {
+	background-image: url(../../101/i/footerIcons.png);
+	height: 85px
+}
+
+.nnacres {
+	width: 75px
+}
+
+.jeevansathi {
+	background-position: -75px 0;
+	width: 119px
+}
+
+.ng {
+	background-position: -196px 0;
+	width: 136px
+}
+
+.firstNaukri {
+	background-position: -331px 0;
+	width: 81px
+}
+
+.brijj {
+	background-position: -412px 0;
+	width: 65px
+}
+
+.allChkDeal {
+	background-position: -477px 0;
+	width: 131px
+}
+
+.shiksha {
+	background-position: -607px 0;
+	width: 102px
+}
+
+.policyBazaar {
+	background-position: -710px 0;
+	width: 121px
+}
+
+.zomato {
+	background-position: -829px 0;
+	width: 71px
+}
+
+.meritnation {
+	background-position: -902px 0;
+	width: 121px
+}
+
+.mydalal {
+	background-position: -1021px 0;
+	width: 137px
+}
+
+@
+-moz-keyframes vibrate { 0%{
+	margin-left: 0
+}
+
+20%{
+margin-left
+:
+2px
+}
+40%{
+margin-left
+:
+-2px
+}
+60%{
+margin-left
+:
+1px
+}
+80%{
+margin-left
+:
+-1px
+}
+100%{
+margin-left
+:
+0
+}
+}
+@
+keyframes vibrate { 0%{
+	margin-left: 0
+}
+
+20%{
+margin-left
+:
+2px
+}
+40%{
+margin-left
+:
+-2px
+}
+60%{
+margin-left
+:
+1px
+}
+80%{
+margin-left
+:
+-1px
+}
+100%{
+margin-left
+:
+0
+}
+}
+@
+-webkit-keyframes vibrate { 0%{
+	margin-left: 0
+}
+
+20%{
+margin-left
+:
+2px
+}
+40%{
+margin-left
+:
+-2px
+}
+60%{
+margin-left
+:
+1px
+}
+80%{
+margin-left
+:
+-1px
+}
+100%{
+margin-left
+:
+0
+}
+}
+.loginLay {
+	width: 65%;
+	margin: 0 auto;
+	padding: 50px 0
+}
+
+.loginLay .row .rowR {
+	width: 65%
+}
+
+.fixedForm .loginLay .row .leadFormTxtArea textarea,.loginLay .fixedForm .row .leadFormTxtArea textarea,.loginLay .row input,.loginLay .row textarea
+	{
+	width: 90%
+}
+
+.loginLay .row textarea {
+	height: 70px
+}
+
+.loginLay .row.forgot {
+	text-align: right;
+	width: 97%
+}
+
+.loginLay .selLogin {
+	height: 35px;
+	width: 40%;
+	margin: 0 auto 20px;
+	border: 1px solid #bebebe;
+	background: #fff;
+	position: relative
+}
+
+.loginLay .selLogin a {
+	display: block;
+	float: left;
+	padding: 12px 0;
+	width: 49%;
+	text-align: center;
+	color: #666;
+	z-index: 1;
+	position: relative
+}
+
+.loginLay .selLogin a.act {
+	color: #fff
+}
+
+.loginLay .selLogin .actLayer {
+	background: #515050;
+	width: 50%;
+	height: 36px;
+	display: block;
+	z-index: 0;
+	left: 0;
+	position: absolute
+}
+
+.fixedForm .row .leadFormTxtArea .loginLay .selLogin textarea,.loginLay .selLogin .fixedForm .row .leadFormTxtArea textarea,.loginLay .selLogin input
+	{
+	display: none
+}
+
+.loginLay label {
+	line-height: 40px;
+	text-align: right;
+	display: block;
+	padding: 0 10px 0 0
+}
+
+.loginLay button {
+	width: 30%;
+	margin: 20px auto 0;
+	display: block
+}
+
+.loginLay .txtC {
+	text-align: center
+}
+
+.ltCont,.ltLayer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0
+}
+
+.lightbox,.ltCont.close {
+	display: none
+}
+
+.ltCont .lightbox_open {
+	display: block
+}
+
+.ltLayer {
+	-moz-transition: opacity .3s;
+	transition: opacity .3s
+}
+
+.ltLayer.open {
+	opacity: .5;
+	filter: alpha(opacity = 50)
+}
+
+.ltLayer.close {
+	opacity: 0;
+	filter: alpha(opacity = 0)
+}
+
+.flipClose,.flipOpen {
+	-webkit-transform-origin: 50% 0 0;
+	-moz-transform-origin: 50% 0 0;
+	-ms-transform-origin: 50% 0 0;
+	transform-origin: 50% 0 0;
+	-moz-transition: -moz-transform .3s, opacity .3s;
+	transition: -webkit-transform .3s, opacity .3s;
+	transition: transform .3s, opacity .3s
+}
+
+.flipOpen {
+	-webkit-transform: perspective(1300px) rotateX(0deg);
+	-moz-transform: perspective(1300px) rotateX(0deg);
+	transform: perspective(1300px) rotateX(0deg);
+	opacity: 1
+}
+
+.flipClose {
+	-webkit-transform: perspective(1300px) rotateX(-60deg);
+	-moz-transform: perspective(1300px) rotateX(-60deg);
+	transform: perspective(1300px) rotateX(-60deg);
+	opacity: 0
+}
+
+.ltLayer {
+	background: #000
+}
+
+.ltBx {
+	background: #f4f4f4
+}
+
+.ltBx.standalone {
+	background: #fff
+}
+
+.ltBx .ltGlobalHd {
+	background: #515050;
+	padding: 15px 0;
+	width: 100%;
+	overflow: hidden;
+	position: relative
+}
+
+.ltBx .ltGlobalHd .ltGlobalTtl {
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 50px 0 10px
+}
+
+.ltBx .ltGlobalHd .ltGlobalCls {
+	width: 25px;
+	height: 25px;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -13px;
+	right: 10px;
+	background-position: 0 -27px
+}
+
+.ltBx .ltCntnt {
+	padding: 10px;
+	font-size: 12px;
+	color: #666
+}
+
+.ltBx .blueBtn,.ltBx .lightCyanBtn {
+	height: 50px;
+	font-size: 16px
+}
+
+.ltBx .dWrap {
+	padding-right: 15px
+}
+
+.ltBx .row {
+	padding: 10px 0;
+	width: 100%
+}
+
+.ltBx .row .rowL {
+	width: 20%;
+	float: left
+}
+
+.ltBx .row .rowR {
+	width: 80%;
+	float: left
+}
+
+.ltBx .rowHalf {
+	width: 50%;
+	float: left
+}
+
+.ltBx .rowHalf .rowL {
+	width: 40%
+}
+
+.ltBx .rowHalf .rowR {
+	width: auto
+}
+
+.fixedForm .row .leadFormTxtArea .ltBx textarea,.ltBx .fixedForm .row .leadFormTxtArea textarea,.ltBx input,.ltBx select,.ltBx textarea
+	{
+	border: 1px solid #ccc;
+	padding: 12px
+}
+
+.ltBx.wrappendInputs .blueBtn {
+	margin: 20px auto 0;
+	display: block
+}
+
+.ltBx.wrappendInputs form {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px 0
+}
+
+.fixedForm .row .leadFormTxtArea .ltBx.wrappendInputs textarea.sugInp,.ltBx.wrappendInputs .fixedForm .row .leadFormTxtArea textarea.sugInp,.ltBx.wrappendInputs input.sugInp
+	{
+	border: none !important
+}
+
+.ltBx.wrappendInputs .row {
+	padding: 10px 0;
+	width: 100%
+}
+
+.ltBx.wrappendInputs .cover {
+	border: 1px solid #dedede;
+	background: #fff
+}
+
+.ltBx.wrappendInputs .cover *:focus {
+	outline: 0
+}
+
+.fixedForm .row .leadFormTxtArea .ltBx.wrappendInputs .cover textarea,.ltBx.wrappendInputs .cover .fixedForm .row .leadFormTxtArea textarea,.ltBx.wrappendInputs .cover input,.ltBx.wrappendInputs .cover select,.ltBx.wrappendInputs .cover textarea
+	{
+	width: 100%;
+	padding: 12px 0 12px 12px;
+	border: none;
+	_vertical-align: top
+}
+
+.ltBx.wrappendInputs .cover ul.DDsearch {
+	padding: 5px 6px
+}
+
+.fixedForm .row .leadFormTxtArea .ltBx.wrappendInputs .cover.ddwn textarea,.ltBx.wrappendInputs .cover.ddwn .fixedForm .row .leadFormTxtArea textarea,.ltBx.wrappendInputs .cover.ddwn input
+	{
+	padding: 7px 0 7px 5px
+}
+
+.ltBx.wrappendInputs .rowL {
+	float: left;
+	text-align: right
+}
+
+.ltBx.wrappendInputs .rowL label {
+	margin: 0 10px 0 0
+}
+
+.ltBx.wrappendInputs .rowR {
+	float: left;
+	width: 60%;
+	font-size: 0
+}
+
+.ltBx.wrappendInputs .rowR.halfWidth {
+	width: 40%
+}
+
+.ltBx.wrappendInputs .rowR.fullWidth {
+	width: 80%
+}
+
+.ltBx.wrappendInputs label {
+	line-height: 40px;
+	*vertical-align: top;
+	margin: 0 15px 0 10px;
+	font-size: 12px
+}
+
+.ltBx.wrappendInputs .comErr .erLbl,.ltBx.wrappendInputs .err .erLbl {
+	display: inline
+}
+
+.ltBx.wrappendInputs .msgBar .cnt {
+	width: auto
+}
+
+.ltBx.wrappendInputs .DDinputWrap {
+	padding-left: 0
+}
+
+.ltBx.wrappendInputs .ddwn .DDsearch {
+	border: none;
+	padding: 0
+}
+
+.ltBx.wrappendInputs .multiToggle,.ltBx.wrappendInputs .toggle {
+	border: 1px solid #bebebe;
+	background: #fff;
+	position: relative
+}
+
+.ltBx.wrappendInputs .multiToggle .tab,.ltBx.wrappendInputs .toggle .tab
+	{
+	float: left;
+	text-align: center;
+	z-index: 1;
+	position: relative
+}
+
+.ltBx.wrappendInputs .multiToggle .tab a,.ltBx.wrappendInputs .toggle .tab a
+	{
+	padding: 12px 0;
+	display: block;
+	color: #666;
+	border-left: 1px solid #bebebe
+}
+
+.ltBx.wrappendInputs .multiToggle .tab.act a,.ltBx.wrappendInputs .toggle .tab.act a
+	{
+	color: #fff
+}
+
+.ltBx.wrappendInputs .multiToggle .tab:first-child a,.ltBx.wrappendInputs .toggle .tab:first-child a
+	{
+	border-left: 0
+}
+
+.ltBx.wrappendInputs .multiToggle.double .actLayer,.ltBx.wrappendInputs .multiToggle.double .tab,.ltBx.wrappendInputs .toggle.double .actLayer,.ltBx.wrappendInputs .toggle.double .tab
+	{
+	width: 50%
+}
+
+.ltBx.wrappendInputs .multiToggle.triple .actLayer,.ltBx.wrappendInputs .multiToggle.triple .tab,.ltBx.wrappendInputs .toggle.triple .actLayer,.ltBx.wrappendInputs .toggle.triple .tab
+	{
+	width: 33.33%
+}
+
+.ltBx.wrappendInputs .multiToggle .actLayer,.ltBx.wrappendInputs .toggle .actLayer
+	{
+	background: #515050;
+	display: block;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute
+}
+
+.fixedForm .row .leadFormTxtArea .ltBx.wrappendInputs .multiToggle textarea,.fixedForm .row .leadFormTxtArea .ltBx.wrappendInputs .toggle textarea,.ltBx.wrappendInputs .multiToggle .fixedForm .row .leadFormTxtArea textarea,.ltBx.wrappendInputs .multiToggle input,.ltBx.wrappendInputs .toggle .fixedForm .row .leadFormTxtArea textarea,.ltBx.wrappendInputs .toggle input
+	{
+	display: none
+}
+
+.fixedForm .row .leadFormTxtArea textarea,a,body,button,h1,h2,h3,h4,h5,h6,input,p
+	{
+	font-weight: 300
+}
+
+.p0 {
+	padding: 0 !important
+}
+
+.oh {
+	overflow: hidden
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.fn {
+	float: none !important
+}
+
+.dspN {
+	display: none
+}
+
+.dspB {
+	display: block !important
+}
+
+.dspIB {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline
+}
+
+.clr {
+	clear: both
+}
+
+.pb10 {
+	padding-bottom: 10px
+}
+
+.pb15 {
+	padding-bottom: 15px
+}
+
+.pb70 {
+	padding-bottom: 70px
+}
+
+.sampleCL {
+	padding-bottom: 60px
+}
+
+.pdLR {
+	padding: 0 18px
+}
+
+.pt30 {
+	padding-top: 30px
+}
+
+.pt70 {
+	padding-top: 70px !important
+}
+
+.pl20 {
+	padding-left: 20px
+}
+
+.pl25 {
+	padding-left: 25px
+}
+
+.pb4 {
+	padding-bottom: 4px
+}
+
+.pT5 {
+	padding-top: 5px
+}
+
+.pd45 {
+	padding: 45px 0
+}
+
+.mt0 {
+	margin-top: 0
+}
+
+.mT3 {
+	margin-top: 3px
+}
+
+.mT10 {
+	margin-top: 10px
+}
+
+.mt35 {
+	margin-top: 35px
+}
+
+.mt44 {
+	margin-top: 44px
+}
+
+.mt64 {
+	margin-top: 64px
+}
+
+.mr20 {
+	margin-right: 20px
+}
+
+.ml0 {
+	margin-left: 0 !important
+}
+
+.ml10 {
+	margin-left: 10px
+}
+
+.mb10 {
+	margin-bottom: 10px
+}
+
+.pb100 {
+	padding-bottom: 100px
+}
+
+.txtStrike {
+	text-decoration: line-through
+}
+
+.cPrice .txtStrike {
+	font-size: 13px;
+	color: #666
+}
+
+.undrLine {
+	text-decoration: underline;
+	cursor: pointer
+}
+
+.zeroHt {
+	height: 0;
+	overflow: hidden
+}
+
+.lightbxHd {
+	background: #f1f1f1;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: 400
+}
+
+.closeLbx {
+	margin: 4px 0 0
+}
+
+.font_vsmall {
+	font-size: 10px
+}
+
+.font_small {
+	font-size: 11px
+}
+
+.font_normal {
+	font-size: 12px
+}
+
+.font_medium {
+	font-size: 13px
+}
+
+.font_14 {
+	font-size: 14px
+}
+
+.font_16 {
+	font-size: 16px
+}
+
+.font_18 {
+	font-size: 18px
+}
+
+.font_20 {
+	font-size: 20px
+}
+
+.font_22 {
+	font-size: 22px
+}
+
+.font_26 {
+	font-size: 26px
+}
+
+.font_34 {
+	font-size: 34px
+}
+
+.font_37 {
+	font-size: 37px
+}
+
+.font_40 {
+	font-size: 40px
+}
+
+.bold {
+	font-weight: 400;
+	*font-weight: 700
+}
+
+.bolder {
+	font-weight: 700
+}
+
+.noBold {
+	font-weight: 300
+}
+
+@media \0screen {
+	.bold {
+		font-weight: 700
+	}
+}
+
+.bgBlack,.bgGray,.bgGreen,.bglightGray,.bgwhite {
+	background: #2e3339;
+	color: #fff;
+	padding: 50px 0
+}
+
+.bgGreen {
+	background: #008fd5
+}
+
+.sampleCL .bgGreen {
+	padding: 25px 20px;
+	margin: 42px 0 0
+}
+
+.bgGray,.bgwhite {
+	background: #f5f3f3;
+	color: #444
+}
+
+.bglightGray {
+	background: #f9f9f9
+}
+
+.bgwhite {
+	background: #fff
+}
+
+.bdrT {
+	border-top: 1px solid #e2e2e2
+}
+
+.bdr {
+	border: 1px solid #e2e2e2;
+	border-width: 1px 0
+}
+
+.bdrB {
+	border-bottom: 1px solid #e2e2e2
+}
+
+.breadCrmb {
+	font-size: 13px;
+	line-height: 38px;
+	font-weight: 400;
+	clear: both
+}
+
+.breadCrmb a {
+	font-weight: 400
+}
+
+.cities {
+	background: url(../i/cityBg.png)
+}
+
+.rupee31b {
+	background-position: 0 -122px;
+	width: 15px;
+	height: 22px;
+	margin: 0
+}
+
+.rupee28 {
+	background-position: 0 0;
+	width: 13px;
+	height: 19px;
+	margin: 0
+}
+
+.rupee17 {
+	background-position: 0 -21px;
+	width: 9px;
+	height: 14px;
+	margin: 0
+}
+
+.rupee17b {
+	background-position: 0 -37px;
+	width: 9px;
+	height: 14px;
+	margin: 0
+}
+
+.rupee17r {
+	background-position: 0 -80px;
+	width: 9px;
+	height: 14px;
+	margin: 0
+}
+
+.rupee13 {
+	background-position: 0 -69px;
+	width: 6px;
+	height: 9px;
+	margin: 0
+}
+
+.no_pointer {
+	cursor: default
+}
+
+.txtBlue {
+	color: #004276
+}
+
+.txtDrkBlu {
+	color: #002c42
+}
+
+.txtRed {
+	color: #c71e21
+}
+
+.txtBrightRed {
+	color: #ec2828
+}
+
+.txtBlack {
+	color: #000 !important
+}
+
+.txtLightBlack {
+	color: #2e3339
+}
+
+.txtWhite {
+	color: #fff
+}
+
+.txtGrey {
+	color: #444
+}
+
+.txtLghtGry {
+	color: #666
+}
+
+.txtGrn {
+	color: #658003
+}
+
+.txtCentr {
+	text-align: center
+}
+
+.heroLine {
+	font-size: 40px;
+	color: #fff;
+	width: 487px;
+	line-height: 58px;
+	padding: 45px 0 60px
+}
+
+.subHeroLn {
+	font-size: 16px;
+	color: #fff
+}
+
+.bannerPos {
+	position: relative
+}
+
+.blkContntHd,.bluContntHd,.contentHd {
+	font-size: 26px;
+	color: #f5153f;
+	padding-bottom: 10px
+}
+
+.bluContntHd {
+	color: #002c42
+}
+
+.blkContntHd {
+	color: #333
+}
+
+.gryHd {
+	color: #444;
+	font-size: 16px
+}
+
+.gryLesPd {
+	padding: 25px 0;
+	border: 1px solid #e2e2e2;
+	border-width: 1px 0
+}
+
+.ovflwN {
+	overflow: visible;
+	zoom: 1
+}
+
+.rightLink {
+	font-size: 13px;
+	font-weight: 700;
+	float: right;
+	margin-right: 135px
+}
+
+.greyBgLink {
+	background: #9eabbc;
+	padding: 2px 5px;
+	color: #fff;
+	margin: 0 10px;
+	font-weight: 400
+}
+
+.goTop {
+	background: #315875;
+	padding: 7px 5px;
+	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	right: 0
+}
+
+.goTop em {
+	background-position: 2px -237px;
+	height: 26px;
+	width: 30px;
+	vertical-align: middle;
+	cursor: pointer
+}
+
+.hexagon,.hexagonBlck,.hexagonBlckCntr {
+	background: url(../i/hexagn_white.png) no-repeat;
+	height: 80px;
+	width: 94px;
+	float: left;
+	text-align: center
+}
+
+.hexagon.marginR,.marginR.hexagonBlck,.marginR.hexagonBlckCntr {
+	margin-right: 15px
+}
+
+.hexagonBlck,.hexagonBlckCntr {
+	background: url(../i/hexagn_black.png) no-repeat
+}
+
+.hexagonBlckCntr {
+	float: none;
+	width: 80px;
+	display: inline-block;
+	height: 70px
+}
+
+.hexBluBig {
+	background-position: 0 -353px;
+	width: 90px;
+	height: 78px;
+	text-align: center
+}
+
+.gryArwIc {
+	background-position: -15px -26px;
+	height: 8px;
+	width: 13px;
+	margin-left: 3px
+}
+
+.rArrw {
+	background-position: 0 -160px;
+	width: 10px;
+	height: 20px;
+	position: relative;
+	left: -1px;
+	top: 52px;
+	margin-right: 22px;
+	float: left
+}
+
+.rWArrw {
+	background-position: -19px -160px;
+	width: 13px;
+	height: 20px
+}
+
+.smsIc {
+	background-position: -1px -75px;
+	width: 31px;
+	height: 47px;
+	margin: 18px 0 0
+}
+
+.mailIc {
+	background-position: 0 -126px;
+	width: 42px;
+	height: 30px;
+	margin: 26px 0 0
+}
+
+.highLtIc {
+	background-position: -1px -184px;
+	width: 39px;
+	height: 40px;
+	margin: 19px 0 0
+}
+
+.rankIc {
+	background-position: 0 -229px;
+	width: 48px;
+	height: 60px;
+	margin: 8px 0 0
+}
+
+.accessIc {
+	background-position: 0 -297px;
+	width: 59px;
+	height: 60px;
+	margin: 11px 0 0
+}
+
+.glfPhnIc {
+	background-position: 0 -360px;
+	width: 39px;
+	height: 39px;
+	margin: 16px 10px 0 0
+}
+
+.tlkIc {
+	background-position: 0 -407px;
+	width: 39px;
+	height: 38px;
+	margin: 22px 5px 0 0
+}
+
+.chatPopIc {
+	background-position: 0 -499px;
+	width: 47px;
+	height: 39px;
+	margin: 18px 6px 0 0
+}
+
+.locIc {
+	background-position: 0 -453px;
+	width: 39px;
+	height: 42px;
+	margin: 20px 0 0
+}
+
+.pEmailIc,.pNameIc,.pPhnIc {
+	background-position: -37px 2px;
+	width: 22px;
+	height: 22px;
+	margin: 2px 0 0;
+	vertical-align: middle;
+	float: left
+}
+
+.rjArrow {
+	background-position: -185px -142px;
+	width: 45px;
+	height: 38px;
+	position: absolute;
+	right: -38px;
+	*right: -43px;
+	top: 27px
+}
+
+.pEmailIc {
+	background-position: -37px -21px;
+	height: 13px;
+	margin: 8px 0 0
+}
+
+.pPhnIc {
+	background-position: -39px -37px;
+	height: 19px
+}
+
+.orWrap {
+	background-position: 1px -110px;
+	padding: 12px 8px;
+	margin: 0 70px 0 0
+}
+
+.cvStep1,.cvStep2,.cvStep3 {
+	height: 38px;
+	width: 31px;
+	background-position: 1px 0;
+	margin: 21px 0 0
+}
+
+.cvStep2 {
+	background-position: 3px -39px
+}
+
+.cvStep3 {
+	background-position: 3px -74px
+}
+
+.closeLbx {
+	height: 17px;
+	width: 17px;
+	background-position: 1px -148px
+}
+
+.thumbDwn,.thumbUp {
+	height: 12px;
+	width: 13px;
+	background-position: 1px -175px;
+	float: left;
+	margin: 6px 0 0
+}
+
+.thumbUp {
+	background-position: -16px -175px
+}
+
+.errIc,.sucesIc {
+	height: 12px;
+	width: 12px;
+	background-position: 0 0;
+	float: left;
+	margin: 2px 0 0
+}
+
+.sucesIc {
+	background-position: -14px 0
+}
+
+.errPd {
+	padding: 0 0 0 18px
+}
+
+.txtStep1 {
+	background-position: 0 -393px;
+	height: 35px;
+	width: 30px;
+	margin: 21px 0 0
+}
+
+.txtStep2 {
+	background-position: 0 -435px;
+	height: 43px;
+	width: 36px;
+	margin: 17px 5px 0 0
+}
+
+.txtStep3 {
+	background-position: 0 -484px;
+	height: 43px;
+	width: 36px;
+	margin: 17px 0 0 7px
+}
+
+.txtStep4 {
+	background-position: 3px -537px;
+	height: 39px;
+	width: 36px;
+	margin: 20px 0 0
+}
+
+.visStep2 {
+	background-position: -1px -548px;
+	height: 40px;
+	width: 42px;
+	margin: 18px 3px 0 0
+}
+
+.visStep3 {
+	background-position: 2px -594px;
+	height: 46px;
+	width: 50px;
+	margin: 17px 0 0
+}
+
+.eduIc {
+	background-position: -122px 1px;
+	width: 49px;
+	height: 30px;
+	margin: 25px 0 0
+}
+
+.empIc {
+	background-position: -177px 1px;
+	width: 30px;
+	height: 30px;
+	margin: 23px 0 0
+}
+
+.calndrIc,.docIc,.pdfIc {
+	background-position: -80px 1px;
+	width: 19px;
+	height: 19px
+}
+
+.docIc {
+	background-position: -80px -21px
+}
+
+.pdfIc {
+	background-position: -103px 0
+}
+
+
+.disclaim {
+	font-size: 11px;
+	line-height: 18px
+}
+
+.disclaim p {
+	font-size: 12px;
+	padding: 0 0 6px;
+	font-weight: 400
+}
+
+.nCarousel .arrow {
+	background-repeat: repeat-y
+}
+
+.offer small {
+	width: 0;
+	height: 0;
+	border-style: solid
+}
+
+.branchIc,.callIc,.chatIc,.tollIc {
+	background-position: 1px -35px;
+	height: 31px;
+	width: 24px;
+	float: left;
+	margin: 11px 0 0 
+}
+
+.callIc {
+	background-position: 1px -70px;
+	height: 26px;
+	margin: -2px 7px 0 -20px;
+	width: 27px
+}
+
+.chatIc {
+	background-position: 1px -101px;
+	height: 22px;
+	margin: 6px 7px 0 0;
+	width: 27px
+}
+
+.branchIc {
+	background-position: 1px -126px;
+	height: 28px;
+	margin: 1px 6px 0 0
+}
+
+.widgtAr {
+	background-position: 1px -387px;
+	height: 13px;
+	width: 26px;
+	margin: 0 0 0 -15px
+}
+
+.widgetContnr {
+	position: fixed;
+	top: 250px;
+	left: 0;
+	width: 173px;
+	z-index: 9
+}
+.widgetContnr-left {
+	position: fixed;
+	top: 250px;
+	right: 0;
+	width: 173px;
+	z-index: 9
+}
+.contactWidget {
+	width: 163px;
+	*width: 165px;
+	float: right;
+	border: 1px solid #e2e2e2;
+	box-shadow: 1px 1px 9px rgba(0, 0, 0, .6)
+}
+
+.contactWidget li {
+	padding: 10px;
+	font-size: 13px;
+	background: #fff;
+	overflow: hidden;
+	border-bottom: 1px solid #e2e2e2;
+	cursor: pointer;
+	height: 45px
+}
+
+.contactWidget li .widgtLi_2 {
+	padding: 14px 0 0
+}
+
+.contactWidget li .widgtLi_3 {
+	padding: 8px 0 0;
+	display: inline-block
+}
+
+.contactWidget li .widgtLi_3 .smallTxt {
+	font-size: 10px;
+	color: #444
+}
+
+.contactWidget .nopointr {
+	cursor: auto;
+	height: auto;
+	padding: 5px 2px 10px 10px
+}
+
+.contactWidget .nopointr .txtRed {
+	line-height: 1em
+}
+
+.contactWidget .cal {
+	margin: -7px 0 0 33px;
+	*margin: -3px 0 0 33px;
+	font-weight: 400
+}
+
+.contactWidget .cal p {
+	margin-top: 2px;
+	font-weight: 400
+}
+
+.contactWidget a {
+	padding:10px;
+	color: #004276;
+	 font-weight:bold;
+	
+}
+
+.calBackCont {
+	float: right;
+	margin: 0 34px 0 0;
+	position: relative
+}
+.calBackCont .calMeForm {
+	width: 400px;
+	border: 1px solid #e2e2e2;
+	box-shadow: 1px 1px 9px rgba(0, 0, 0, .6)
+}
+
+.calBackCont .calMeForm .formHd {
+	padding: 5px 15px;
+	font-size: 22px;
+	float: left
+}
+
+.calBackCont .calMeForm .closeForm {
+	float: right;
+	padding: 15px;
+	background: #008fd5
+}
+
+.calBackCont .calMeForm .closeForm em {
+	background-position: 0 -155px;
+	height: 22px;
+	width: 22px
+}
+
+.formInputC {
+	background: #f5f3f3;
+	background: rgba(245, 243, 243, .94);
+	padding: 10px 25px 25px;
+	zoom: 1
+}
+
+.mandtory {
+	text-align: right
+}
+
+
+
